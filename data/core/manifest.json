@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "core",
+  "name": "FootManager — Base Oficial Modular (2026)",
+  "version": "1.0.0",
+  "author": "FootManager Core",
+  "type": "core",
+  "requires": [],
+  "countriesAdded": ["BRA", "ENG", "ESP", "ITA", "DEU", "FRA", "POR", "ARG", "SAU", "JPN"],
+  "countriesModified": [],
+  "description": "Base de dados modular oficial no mesmo formato de Pack (.fmpack), organizada por país para manutenção e atualização perpétua."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ARG",
+  "name": "Argentina",
+  "confederation": "CONMEBOL",
+  "seasonCycle": "calendar_year",
+  "currencyCode": "USD",
+  "transferWindows": [
+    { "label": "Janela de Início de Temporada", "startWeek": 1, "endWeek": 8 },
+    { "label": "Janela de Meio de Temporada", "startWeek": 26, "endWeek": 33 }
+  ],
+  "isPlayable": true,
+  "fifaRankingPoints": 1885
+}

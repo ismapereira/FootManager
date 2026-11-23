@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2022"],
+    "types": ["node"],
+    "composite": false,
+    "noEmit": true,
+    "declaration": false,
+    "declarationMap": false,
+    "paths": {
+      "@footmanager/schemas": ["../../packages/schemas/src/index.ts"],
+      "@footmanager/engine": ["../../packages/engine/src/index.ts"],
+      "@footmanager/patches": ["../../packages/patches/src/index.ts"],
+      "@footmanager/storage": ["../../packages/storage/src/index.ts"]
+    }
+  },
+  "include": ["electron"]
+}

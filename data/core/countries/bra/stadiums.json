@@ -1,0 +1,38 @@
+[
+  {
+    "id": "std_bra_maracana",
+    "name": "Maracanã",
+    "city": "Rio de Janeiro",
+    "countryId": "BRA",
+    "capacity": 78838,
+    "expansionMaxCapacity": 82000,
+    "maintenanceCostWeekly": 120000
+  },
+  {
+    "id": "std_bra_allianz_parque",
+    "name": "Allianz Parque",
+    "city": "São Paulo",
+    "countryId": "BRA",
+    "capacity": 43713,
+    "expansionMaxCapacity": 50000,
+    "maintenanceCostWeekly": 95000
+  },
+  {
+    "id": "std_bra_morumbis",
+    "name": "MorumBIS",
+    "city": "São Paulo",
+    "countryId": "BRA",
+    "capacity": 66795,
+    "expansionMaxCapacity": 72000,
+    "maintenanceCostWeekly": 100000
+  },
+  {
+    "id": "std_bra_arena_mrv",
+    "name": "Arena MRV",
+    "city": "Belo Horizonte",
+    "countryId": "BRA",
+    "capacity": 46000,
+    "expansionMaxCapacity": 52000,
+    "maintenanceCostWeekly": 88000
+  }
+]

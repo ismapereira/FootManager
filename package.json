@@ -1,0 +1,33 @@
+{
+  "name": "footmanager-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FootManager — Jogo desktop de gerenciamento de futebol moderno, offline e orientado a dados",
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "tools/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace=@footmanager/desktop run dev",
+    "dev:web": "npm --workspace=@footmanager/desktop run dev:renderer",
+    "build": "npm run build:packages && npm --workspace=@footmanager/desktop run build",
+    "build:packages": "tsc -b tsconfig.json",
+    "lint": "node scripts/lint.mjs",
+    "typecheck": "tsc -b tsconfig.json && npm --workspace=@footmanager/desktop run typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "validate:data": "tsx tools/importer/src/validateCoreData.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "^5.1.1"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

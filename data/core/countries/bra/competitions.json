@@ -1,0 +1,138 @@
+[
+  {
+    "id": "bra_serie_a",
+    "countryId": "BRA",
+    "name": "Campeonato Brasileiro — Série A",
+    "shortName": "Série A",
+    "tier": 1,
+    "template": "round_robin",
+    "seasonCycle": "calendar_year",
+    "startWeek": 14,
+    "endWeek": 48,
+    "optional": false,
+    "reputation": 84,
+    "params": {
+      "clubCount": 20,
+      "legs": 2,
+      "relegationCount": 4,
+      "promotionCount": 0
+    },
+    "continentalBinding": {
+      "confederation": "CONMEBOL",
+      "slots": [
+        { "target": "conmebol_libertadores", "qualification": "top_table", "count": 6 },
+        { "target": "conmebol_sulamericana", "qualification": "top_table", "count": 6 }
+      ]
+    }
+  },
+  {
+    "id": "bra_serie_b",
+    "countryId": "BRA",
+    "name": "Campeonato Brasileiro — Série B",
+    "shortName": "Série B",
+    "tier": 2,
+    "template": "round_robin",
+    "seasonCycle": "calendar_year",
+    "startWeek": 14,
+    "endWeek": 47,
+    "optional": false,
+    "reputation": 66,
+    "params": {
+      "clubCount": 20,
+      "legs": 2,
+      "promotionCount": 4,
+      "relegationCount": 4
+    }
+  },
+  {
+    "id": "bra_serie_c",
+    "countryId": "BRA",
+    "name": "Campeonato Brasileiro — Série C",
+    "shortName": "Série C",
+    "tier": 3,
+    "template": "brazil_serie_c",
+    "seasonCycle": "calendar_year",
+    "startWeek": 15,
+    "endWeek": 44,
+    "optional": false,
+    "reputation": 52,
+    "params": {
+      "clubCount": 20,
+      "promotionCount": 4,
+      "relegationCount": 4
+    }
+  },
+  {
+    "id": "bra_serie_d",
+    "countryId": "BRA",
+    "name": "Campeonato Brasileiro — Série D",
+    "shortName": "Série D",
+    "tier": 4,
+    "template": "brazil_serie_d",
+    "seasonCycle": "calendar_year",
+    "startWeek": 15,
+    "endWeek": 42,
+    "optional": false,
+    "reputation": 40,
+    "params": {
+      "clubCount": 64,
+      "groups": 8,
+      "promotionCount": 4
+    }
+  },
+  {
+    "id": "bra_copa_do_brasil",
+    "countryId": "BRA",
+    "name": "Copa do Brasil",
+    "shortName": "Copa BR",
+    "tier": 0,
+    "template": "knockout",
+    "seasonCycle": "calendar_year",
+    "startWeek": 8,
+    "endWeek": 46,
+    "optional": false,
+    "reputation": 82,
+    "params": {
+      "twoLeggedFromRound": 3
+    },
+    "continentalBinding": {
+      "confederation": "CONMEBOL",
+      "slots": [
+        { "target": "conmebol_libertadores", "qualification": "cup_winner", "count": 1 }
+      ]
+    }
+  },
+  {
+    "id": "bra_supercopa_rei",
+    "countryId": "BRA",
+    "name": "Supercopa Rei",
+    "shortName": "Supercopa",
+    "tier": 0,
+    "template": "knockout",
+    "seasonCycle": "calendar_year",
+    "startWeek": 5,
+    "endWeek": 5,
+    "optional": false,
+    "reputation": 78,
+    "params": {
+      "singleMatch": true
+    }
+  },
+  {
+    "id": "bra_estaduais_padrao",
+    "countryId": "BRA",
+    "name": "Campeonatos Estaduais (Modelo Padrão)",
+    "shortName": "Estaduais",
+    "tier": 0,
+    "template": "brazil_state_standard",
+    "seasonCycle": "calendar_year",
+    "startWeek": 3,
+    "endWeek": 12,
+    "optional": true,
+    "reputation": 62,
+    "params": {
+      "individualStates": ["SP", "RJ", "MG", "RS", "PR", "BA", "CE", "PE", "GO", "SC"],
+      "includeOtherStatesCup": true
+    }
+  }
+]

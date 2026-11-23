@@ -1,0 +1,13 @@
+{
+  "id": "JPN",
+  "name": "Japão",
+  "confederation": "AFC",
+  "seasonCycle": "calendar_year",
+  "currencyCode": "JPY",
+  "transferWindows": [
+    { "label": "Janela de Início de Temporada", "startWeek": 1, "endWeek": 12 },
+    { "label": "Janela de Meio de Temporada", "startWeek": 27, "endWeek": 33 }
+  ],
+  "isPlayable": true,
+  "fifaRankingPoints": 1645
+}

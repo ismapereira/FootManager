@@ -1,0 +1,26 @@
+# Configuração do instalador Windows (.exe NSIS) — FootManager
+appId: com.footmanager.desktop
+productName: FootManager
+copyright: Copyright © 2026 FootManager
+directories:
+  output: ../../release
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - package.json
+extraResources:
+  - from: ../../data/core
+    to: data/core
+asarUnpack:
+  - "**/better-sqlite3/**"
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  artifactName: "${productName}-Setup-${version}.${ext}"
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true

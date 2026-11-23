@@ -1,0 +1,13 @@
+{
+  "id": "BRA",
+  "name": "Brasil",
+  "confederation": "CONMEBOL",
+  "seasonCycle": "calendar_year",
+  "currencyCode": "BRL",
+  "transferWindows": [
+    { "label": "Janela de Início de Temporada", "startWeek": 1, "endWeek": 10 },
+    { "label": "Janela de Meio de Temporada", "startWeek": 28, "endWeek": 32 }
+  ],
+  "isPlayable": true,
+  "fifaRankingPoints": 1820
+}

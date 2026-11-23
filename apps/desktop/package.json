@@ -1,0 +1,44 @@
+{
+  "name": "@footmanager/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist-electron/main.cjs",
+  "scripts": {
+    "dev:renderer": "vite",
+    "dev:electron": "node scripts/build-electron.mjs && wait-on http://127.0.0.1:5173 && node scripts/dev-electron.mjs",
+    "dev": "concurrently -k -n renderer,electron \"npm run dev:renderer\" \"npm run dev:electron\"",
+    "build:renderer": "vite build",
+    "build:electron": "node scripts/build-electron.mjs",
+    "build": "npm run build:renderer && npm run build:electron",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.electron.json --noEmit",
+    "dist:win": "npm run build && electron-builder --win --config electron-builder.yml"
+  },
+  "dependencies": {
+    "@footmanager/engine": "0.1.0",
+    "@footmanager/patches": "0.1.0",
+    "@footmanager/schemas": "0.1.0",
+    "@footmanager/storage": "0.1.0",
+    "@tanstack/react-virtual": "^3.14.28",
+    "i18next": "^27.2.4",
+    "lucide-react": "^1.77.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-i18next": "^18.0.3",
+    "zod": "^4.6.7",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "concurrently": "^10.0.7",
+    "electron": "^45.4.1",
+    "electron-builder": "^26.18.0",
+    "esbuild": "^0.28.2",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.8",
+    "wait-on": "^9.5.1"
+  }
+}

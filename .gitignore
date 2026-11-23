@@ -1,0 +1,31 @@
+# Dependências
+node_modules/
+
+# Artefatos de build
+dist/
+dist-electron/
+release/
+build/
+coverage/
+*.tsbuildinfo
+
+# Bancos SQLite e saves locais
+*.fmsave
+*.fmsave.bak
+*.db
+*.db-wal
+*.db-shm
+saves/
+patches/*.fmpack
+
+# Ambiente e logs
+.env
+.env.local
+*.log
+npm-debug.log*
+
+# Sistema operacional / IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

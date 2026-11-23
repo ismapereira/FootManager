@@ -1,0 +1,13 @@
+{
+  "id": "ENG",
+  "name": "Inglaterra",
+  "confederation": "UEFA",
+  "seasonCycle": "split_year",
+  "currencyCode": "GBP",
+  "transferWindows": [
+    { "label": "Janela de Inverno", "startWeek": 1, "endWeek": 4 },
+    { "label": "Janela de Verão", "startWeek": 27, "endWeek": 35 }
+  ],
+  "isPlayable": true,
+  "fifaRankingPoints": 1835
+}

@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/schemas" },
+    { "path": "./packages/engine" },
+    { "path": "./packages/patches" },
+    { "path": "./packages/storage" },
+    { "path": "./tools/importer" }
+  ]
+}
